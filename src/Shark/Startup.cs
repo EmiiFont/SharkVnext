@@ -13,6 +13,7 @@ using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
 using Microsoft.Framework.Logging.Console;
 using Shark.Models;
+using Shark.Persistence.Repositories;
 
 namespace Shark
 {
@@ -35,6 +36,7 @@ namespace Shark
             services.AddEntityFramework(Configuration)
                 .AddSqlServer()
                 .AddDbContext<ApplicationDbContext>();
+            services.AddScoped<IPostRepository, PostRepository>();
 
             // Add Identity services to the services container.
             services.AddDefaultIdentity<ApplicationDbContext, ApplicationUser, IdentityRole>(Configuration);
@@ -44,7 +46,7 @@ namespace Shark
 
             // Uncomment the following line to add Web API servcies which makes it easier to port Web API 2 controllers.
             // You need to add Microsoft.AspNet.Mvc.WebApiCompatShim package to project.json
-            // services.AddWebApiConventions();
+             services.AddWebApiConventions();
 
         }
 
@@ -84,7 +86,7 @@ namespace Shark
                     defaults: new { controller = "Home", action = "Index" });
 
                 // Uncomment the following line to add a route for porting Web API 2 controllers.
-                // routes.MapWebApiRoute("DefaultApi", "api/{controller}/{id?}");
+                 routes.MapWebApiRoute("DefaultApi", "api/{controller}/{id?}");
             });
         }
     }
