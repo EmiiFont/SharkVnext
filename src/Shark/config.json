@@ -1,0 +1,15 @@
+﻿{
+    "Data": {
+        "DefaultConnection": {
+            "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-Shark-6e3b9b57-f031-452e-8f5b-2ef7688cc23f;Trusted_Connection=True;MultipleActiveResultSets=true"
+        },
+        "MongoConnection": {
+            "ConnectionString" :  "mongodb://localhost/shark?safe=true"
+        }
+    },
+    "EntityFramework": {
+        "ApplicationDbContext": {
+            "ConnectionStringKey": "Data:DefaultConnection:ConnectionString"
+        }
+    }
+   }

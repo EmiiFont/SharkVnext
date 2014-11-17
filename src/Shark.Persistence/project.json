@@ -1,0 +1,14 @@
+﻿{
+    "version": "1.0.0-*",
+    "dependencies": {
+    },
+
+    "frameworks": {
+        "aspnet50": {
+            "dependencies": {
+                "mongocsharpdriver": "1.10.0.0-rc0",
+                "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta1"
+            }
+        }
+    }
+}

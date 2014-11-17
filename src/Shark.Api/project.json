@@ -1,0 +1,34 @@
+﻿{
+    "webroot": "wwwroot",
+    "version": "1.0.0-*",
+    "exclude": [
+        "wwwroot"
+    ],
+    "packExclude": [
+        "**.kproj",
+        "**.user",
+        "**.vspscc"
+    ],
+    "dependencies": {
+        "Microsoft.AspNet.Server.IIS": "1.0.0-beta1",
+        "Microsoft.AspNet.Mvc": "6.0.0-beta1",
+        "Microsoft.AspNet.Mvc.WebApiCompatShim": "6.0.0-beta1",
+        "Microsoft.AspNet.Diagnostics": "1.0.0-beta1",
+        "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-beta1",
+        "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta1",
+        "Microsoft.AspNet.Security.Cookies": "1.0.0-beta1",
+        "Microsoft.AspNet.Server.WebListener": "1.0.0-beta1",
+        "Microsoft.AspNet.StaticFiles": "1.0.0-beta1",
+        "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta1",
+        "Microsoft.Framework.CodeGenerators.Mvc": "1.0.0-beta1",
+        "Microsoft.Framework.Logging": "1.0.0-beta1",
+        "Microsoft.Framework.Logging.Console": "1.0.0-beta1",
+    },
+    "frameworks": {
+        "aspnet50": {
+            "dependencies": {
+                "Shark.Persistence": "1.0.0" 
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+﻿{
+    "Data": {
+        "MongoConnection": { 
+            "ConnectionString": "mongodb://localhost/shark?safe=true"
+        }
+    }
+}
