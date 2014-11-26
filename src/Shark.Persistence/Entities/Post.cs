@@ -9,5 +9,8 @@ namespace Shark.Persistence.Entities
         public string Title { get; set; }
         public string Content { get; set; }
         public string MediaUrl { get; set; }
+
+        public int TotalComments { get; set; }
+        public int TotalLikes { get; set; }
     }
 }
